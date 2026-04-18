@@ -53,10 +53,14 @@
         
         nav a:hover { color: var(--gold); }
 
-        /* Hero - No red overlay, clearer image */
+        /* Revised Hero Gradient - Softer & Warmer */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), 
-                        url('candles.jpg') center/cover no-repeat;
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.35),
+                rgba(0, 0, 0, 0.65)
+            ), 
+            url('candles.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 110px 20px 80px;
@@ -71,7 +75,7 @@
             font-size: clamp(2.4rem, 9vw, 3.8rem);
             margin: 0 0 12px 0;
             color: white;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            text-shadow: 0 4px 18px rgba(0, 0, 0, 0.85);
             line-height: 1.05;
         }
         
@@ -79,6 +83,7 @@
             font-size: clamp(1.2rem, 4.5vw, 1.6rem);
             max-width: 700px;
             margin: 0 auto;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
         }
 
         section {
@@ -199,7 +204,7 @@
         </ul>
     </nav>
 
-    <!-- Hero with Candles Image - No Red Overlay -->
+    <!-- Hero with Revised Gradient -->
     <header class="hero">
         <div>
             <h1 class="logo">Nazareth Lutheran Church</h1>
