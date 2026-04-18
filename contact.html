@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Nazareth Lutheran Church</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+        
+        :root {
+            --red: #C8102E;
+            --dark: #1E2A44;
+            --gold: #D4AF37;
+            --cream: #F8F5F0;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: var(--cream);
+        }
+        nav {
+            background: var(--dark);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            background: linear-gradient(rgba(200,16,46,0.85), rgba(200,16,46,0.85)), 
+                        url('https://via.placeholder.com/1920x500/1E2A44/FFFFFF?text=Nazareth+Lutheran+Church') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            color: white;
+        }
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--red);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        .contact-info, .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .info-item {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        .info-item strong {
+            color: var(--red);
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus {
+            border-color: var(--red);
+            outline: none;
+        }
+        button {
+            background: var(--red);
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #a00c24;
+        }
+        .map {
+            margin-top: 50px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="calendar.html">Calendar & Events</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1 class="logo">Nazareth Lutheran Church</h1>
+        <p style="font-size: 1.5rem; margin: 0;">Lexington, South Carolina</p>
+    </div>
+
+    <section>
+        <h1 style="text-align: center; margin-bottom: 15px;">Get In Touch With Us</h1>
+        <p style="text-align: center; font-size: 1.25rem; max-width: 720px; margin: 0 auto 50px;">
+            Everyone is welcome at our Father's table. We'd love to hear from you — whether you're planning a visit, have a question, or want to learn more about our ministries.
+        </p>
+
+        <div class="contact-grid">
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2 style="margin-top: 0;">Visit or Call</h2>
+                
+                <div class="info-item">
+                    <strong>Address</strong>
+                    1800 Nazareth Road<br>
+                    Lexington, SC 29073
+                </div>
+                
+                <div class="info-item">
+                    <strong>Phone</strong>
+                    (803) 359-7993
+                </div>
+                
+                <div class="info-item">
+                    <strong>Worship Times</strong>
+                    Sunday School: 10:00 AM<br>
+                    Worship Service: 11:00 AM
+                </div>
+                
+                <p style="margin: 30px 0 10px; font-size: 1.1rem;">
+                    <strong>Pastor Angela Jennings</strong>
+                </p>
+                <p>All are welcome!</p>
+                
+                <a href="https://www.facebook.com/NazarethLutheranChurchSC/" target="_blank" 
+                   style="color: var(--red); text-decoration: underline; font-weight: 500;">
+                    Follow us on Facebook →
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <h2 style="margin-top: 0;">Send a Message</h2>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> <!-- Replace with your actual form endpoint -->
+                    <input type="text" name="name" placeholder="Your Full Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number (optional)">
+                    <textarea name="message" rows="7" placeholder="How can we help you today?" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p style="font-size: 0.9rem; color: #555; margin-top: 20px;">
+                    We typically reply within 1–2 business days.
+                </p>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map">
+            <iframe 
+                width="100%" 
+                height="420" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.5!2d-81.281!3d33.901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8855e0b0b0b0b0b0%3A0x1234567890abcdef!2s1800+Nazareth+Rd%2C+Lexington%2C+SC+29073!5e0!3m2!1sen!2sus!4v1710000000000">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nazareth Lutheran Church • Lexington, SC</p>
+        <p>1800 Nazareth Road, Lexington, SC 29073 • (803) 359-7993</p>
+        <p style="margin-top: 15px; opacity: 0.9;">
+            A congregation of the Evangelical Lutheran Church in America (ELCA)
+        </p>
+    </footer>
+
+</body>
+</html>

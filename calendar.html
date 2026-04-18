@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar & Events | Nazareth Lutheran Church</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+        
+        :root { --red:#C8102E; --dark:#1E2A44; --gold:#D4AF37; --cream:#F8F5F0; }
+        
+        body { margin:0; font-family:'Roboto',sans-serif; color:#333; line-height:1.7; background:var(--cream); }
+        nav { background:var(--dark); padding:16px 0; position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+        nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; gap:32px; flex-wrap:wrap; }
+        nav a { color:white; text-decoration:none; font-weight:500; font-size:1.05rem; }
+        nav a:hover { color:var(--gold); }
+
+        .hero { background: linear-gradient(rgba(200,16,46,0.75), rgba(200,16,46,0.75)), url('preaching.jpg') center/cover no-repeat; color:white; text-align:center; padding:140px 20px 90px; }
+        .logo { font-family:'Playfair Display',serif; font-size:3.4rem; margin:0 0 12px 0; color:white; text-shadow:0 3px 12px rgba(0,0,0,0.6); }
+
+        section { max-width:1100px; margin:0 auto; padding:70px 20px; text-align:center; }
+        h2 { font-family:'Playfair Display',serif; color:var(--red); font-size:2.5rem; margin-bottom:40px; }
+
+        .calendar-placeholder {
+            background:white; padding:50px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.1);
+            font-size:1.2rem; max-width:700px; margin:0 auto;
+        }
+
+        footer { background:var(--dark); color:white; text-align:center; padding:55px 20px 35px; }
+        .footer-info { margin:22px 0; font-size:1.05rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="calendar.html">Calendar & Events</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="logo">Nazareth Lutheran Church</h1>
+        <p style="font-size:1.5rem;">Upcoming Events & Activities</p>
+    </header>
+
+    <section>
+        <h2>Calendar & Events</h2>
+        <div class="calendar-placeholder">
+            <p><strong>Regular Schedule</strong></p>
+            <p>Sunday School: 10:00 AM<br>Worship Service: 11:00 AM</p>
+            <p style="margin-top:40px;">Check back often for special events, Bible studies, fellowship gatherings, and community outreach activities.</p>
+            <p style="margin-top:30px; font-size:1.1rem;">For the latest calendar, feel free to <a href="contact.html" style="color:var(--red);">contact us</a> or follow us on Facebook.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nazareth Lutheran Church • Lexington, SC</p>
+        <p class="footer-info">1800 Nazareth Road • Lexington, SC 29073 • (803) 359-7993</p>
+        <p style="margin-top:25px; opacity:0.9; font-size:0.93rem;">A congregation of the Evangelical Lutheran Church in America (ELCA)</p>
+    </footer>
+</body>
+</html>
